@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>가위바위보</title>
+</head>
+<body>
+  <div id="lobby">
+    <input id="nick" placeholder="닉네임">
+    <input id="room" placeholder="방 코드 (예: ABCD)">
+    <button id="join">입장</button>
+  </div>
+
+  <div id="game" hidden>
+    <p id="players"></p>
+    <button data-hand="rock">✊ 바위</button>
+    <button data-hand="paper">✋ 보</button>
+    <button data-hand="scissors">✌️ 가위</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
